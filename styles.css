@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap');
+
+@font-face {
+    font-family: ShareTech;
+    src: url(fonts/ShareTechMono-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: madetommy;
+    src: url(fonts/madetommy-med.otf) format('opentype');
+  }
+  
+
+  @keyframes ttle {
+    from {letter-spacing: -2.5vw; transform: translateX(-10%);}
+    to {letter-spacing: 0vw; transform: translateX(0%);}
+  }
+  
+  
+
+  @keyframes bdy {
+    from {letter-spacing: -2.5vw; transform: translateX(-50%);}
+    to {letter-spacing: 0vw; transform: translateX(0%);}
+  }
+
+  @keyframes agnts {
+    from {letter-spacing: -2.5vw; transform: translateX(-150%);}
+    to {letter-spacing: 0vw; transform: translateX(0%);}
+  }
+  
+  @keyframes pic {
+    from {transform: translateX(150%);}
+    to {transform: translateX(0%);}
+  }
+
+body {
+    margin-left: 5vh;
+    margin-top: 10vh;
+    overflow: hidden;
+}
+
+.title-head {
+    font-family: 'Kanit', sans-serif;
+    font-size: 10vh;
+    animation: ttle;
+    animation-duration: 1s;
+}
+
+.ign {
+    width: 10vw;
+    margin-top: 0.1em;
+    font-family: ShareTech, regular;
+    font-size: 5vh;
+    color: #8B0000;
+    animation: bdy;
+    animation-duration: 0.5s;
+}
+
+.ign:hover {
+    transition-duration: 50ms;
+    color: red;
+    text-shadow: red;
+    cursor: pointer;
+}
+
+.template{
+    font-family: ShareTech, regular;
+    font-size: 1.5vh;
+    margin-bottom: -0.3em;
+    color: #8B0000;
+    animation: bdy;
+    animation-duration: 1s;
+}
+
+.data {
+    font-family: madetommy, medium;
+    font-size: 2.8vh;
+    animation: bdy;
+    animation-duration: 1.5s;
+}
+
+.agents {
+    position: fixed;
+    bottom: 1em;
+    font-size: 5vh;
+    animation: agnts;
+    animation-duration: 0.5s;
+}
+
+.agents .header1 {
+    font-family: ShareTech, regular;
+    margin-bottom: -0.5em;
+}
+.agents .header2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 6.5vh;
+    margin-top: -0.55em;
+    color: #8B0000;
+}
+
+.agent-body img{
+    margin-right: 0.2em;
+    max-width: 5vw;
+    min-height: 5vw;
+}
+
+
+.bgd .photo{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 100vh;
+    z-index: -1;
+    animation: pic;
+    animation-duration: 1.9s;
+    animation-timing-function: ease-in-out;
+}
+.bgd .bg1{
+    position: fixed;
+    right: -10vh;
+    bottom: 0px;
+    width: 64vw;
+    height: 100vh;
+    z-index: -1;
+    animation: pic;
+    animation-duration: 0.2s;
+}
+.bgd .bg2{
+    position: fixed;
+    right: -10vh;
+    bottom: 0px;
+    width: 60vw;
+    height: 100vh;
+    z-index: -1;
+    animation: pic;
+    animation-duration: 0.8s;
+}
+
+
+
+.footer{
+    font-family: ShareTech, regular;
+    font-size: 3.5vh;
+    color: white;
+    margin-top: 1em;
+    animation: bdy;
+    animation-duration: 1.9s;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    transition-duration: 50ms;
+    color: red;
+    cursor: pointer;
+}
